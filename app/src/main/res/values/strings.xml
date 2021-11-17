@@ -4,9 +4,41 @@
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
+    <!--<string name="next">Next</string>-->
     <string name="previous">Previous</string>
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+    <string name="app_id">ca-app-pub-3008944083734980~5709212555</string>
+    <string name="action_add_text">Add</string>
+    <string name="action_delete_text">Delete</string>
+    <string name="action_show_intro_slider">Show Introduction slider</string>
+    <string name="action_enable_pattern_keyboard">Enable Pattern Keyboard</string>
+    <string name="custom_ime">Pattern Keyboard</string>
+    <string name="pattern_text_list_page">Pattern Text List</string>
+    <string name="new_pattern_page">New Pattern Text</string>
+    <string name="update_pattern_page">Update Pattern Text</string>
+    <string name="no_pattern_text_added">No pattern text added</string>
+    <string name="banner_ad_unit_id_1">ca-app-pub-3008944083734980/7185945757</string>
+    <string name="banner_ad_unit_id_2">ca-app-pub-3008944083734980/8185000958</string>
+    <string name="banner_ad_unit_id_3">ca-app-pub-3008944083734980/7028360559</string>
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="got_it">GOT IT</string>
+
+    <string name="slide_1_title">Welcome</string>
+    <string name="slide_1_desc">Pattern Keyboard provides the ease to type in complex words/sentences with just a swipe.</string>
+
+    <string name="slide_2_title">Enable</string>
+    <string name="slide_2_desc">In Settings > Language &amp; Input, make sure Pattern Keyboard is enabled.</string>
+
+    <string name="slide_3_title">Change keyboard</string>
+    <string name="slide_3_desc">Whenever you wish to use, in Settings > Language &amp; Input, select Pattern Keyboard as your current keyboard.</string>
+
+    <!-- messages -->
+    <string name="enter_text">Enter text</string>
+    <string name="select_pattern">Associate a pattern</string>
 </resources>
