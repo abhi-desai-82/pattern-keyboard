@@ -30,6 +30,9 @@ public class WelcomeActivity extends AppCompatActivity {
         if (!PreferenceManager.getInstance(this).isFirstTimeLaunch())
             launchHomeScreen();
 
+        //copy db files to file system
+        Utils.copySQLiteDb(this);
+
         sliderLayoutIds = new int[]{R.layout.activity_welcome_slide1, R.layout.activity_welcome_slide2, R.layout.activity_welcome_slide3};
 
         mViewPager = (ViewPager) findViewById(R.id.viewPager);
@@ -115,7 +118,7 @@ public class WelcomeActivity extends AppCompatActivity {
 
     private void launchHomeScreen() {
         PreferenceManager.getInstance(this).setFirstTimeLaunch(false);
-        startActivity(new Intent(WelcomeActivity.this, MainActivity.class));
+        startActivity(new Intent(WelcomeActivity.this, HomeActivity.class));
         finish();
     }
 

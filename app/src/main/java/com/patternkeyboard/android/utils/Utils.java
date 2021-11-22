@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Build;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentActivity;
 
 import com.patternkeyboard.android.task.CopyDBTask;
@@ -13,11 +14,11 @@ import java.io.File;
 
 public class Utils {
 
-    public static void copySQLiteDb(Context context) {
+    public static void copySQLiteDb(AppCompatActivity activity) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB)
-            new CopyDBTask(context).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+            new CopyDBTask(activity).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
         else
-            new CopyDBTask(context).execute();
+            new CopyDBTask(activity).execute();
     }
 
     public static boolean isSQLiteDbExists(Context context) {
